@@ -76,14 +76,16 @@ img {
 }
 
 .score {
-  margin-top: 25px;
+  margin-top: auto;
   font-size: 18px;
 }
+
 .versus {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 20px 0;
+  margin-top: 0;
+  margin-bottom: 0;
   gap: 20px;
   font-family: "Fira Code", monospace;
 }
