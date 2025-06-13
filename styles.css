@@ -1,0 +1,170 @@
+:root {
+  --background-color: #1e1b2e;
+  --card-color: #2a2440;
+  --primary-purple: #9c27b0;
+  --light-purple: #ce93d8;
+  --button-purple: #7e57c2;
+  --text-color: #f3e5f5;
+  --button-hover: #9575cd;
+  --accent-green: #66bb6a;
+  --accent-red: #ef5350;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.game-container {
+  background-color: var(--card-color);
+  text-align: center;
+  padding: 30px 20px;
+  border-radius: 25px;
+  box-shadow: 0 10px 25px rgba(156, 39, 176, 0.4);
+  max-width: 450px;
+  width: 90%;
+  border: 2px solid var(--primary-purple);
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: var(--light-purple);
+}
+
+img {
+  height: 45px;
+}
+
+.move-button {
+  background-color: var(--card-color);
+  border: 2px solid var(--light-purple);
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.move-button:hover {
+  background-color: var(--button-hover);
+  transform: scale(1.1);
+}
+
+.move-button:active {
+  transform: scale(0.9);
+}
+
+.js-result {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0;
+  color: var(--accent-green);
+}
+
+.js-moves,
+.js-score {
+  font-family: "Fira Code", monospace;
+}
+
+.score {
+  margin-top: 25px;
+  font-size: 18px;
+}
+.versus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  gap: 20px;
+  font-family: "Fira Code", monospace;
+}
+
+.player {
+  text-align: center;
+}
+
+.emoji {
+  font-size: 2rem;
+}
+
+.vs-text {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: var(--light-purple);
+}
+
+.reset-button {
+  background-color: var(--button-purple);
+  border: none;
+  padding: 10px 14px;
+  margin-top: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.reset-button:hover {
+  background-color: var(--light-purple);
+}
+
+.control-icons {
+  width: 28px;
+  height: 28px;
+  filter: invert(100%);
+}
+
+.confirm-message {
+  background-color: var(--card-color);
+  color: var(--text-color);
+  border-radius: 8px;
+  padding: 15px;
+  margin-top: 20px;
+  border: 1px solid var(--light-purple);
+}
+
+.confirm-message button {
+  margin: 0 5px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+}
+
+.yes-button {
+  background-color: var(--accent-green);
+}
+
+.no-button {
+  background-color: var(--accent-red);
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.clicked {
+  animation: bounce 0.3s ease;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="game-container">
+      <h3 class="title">Rock Paper Scissors</h3>
+      <button class="move-button rock-button">
+        <img src="images/rock-emoji.png" />
+      </button>
+
+      <button class="move-button paper-button">
+        <img src="images/paper-emoji.png" />
+      </button>
+
+      <button class="move-button scissor-button">
+        <img src="images/scissors-emoji.png" />
+      </button>
+
+      <p class="js-result"></p>
+      <div class="versus js-moves">
+        <div class="player player-you">
+          <p>You</p>
+          <p class="emoji js-player-move"></p>
+        </div>
+        <span class="vs-text">vs</span>
+        <div class="player player-computer">
+          <p>Computer</p>
+          <p class="emoji js-computer-move"></p>
+        </div>
+      </div>
+
+      <p class="js-score score"></p>
+
+      <button class="reset-button">
+        <img src="./images/clock-rotate-left-solid.svg" class="control-icons" />
+      </button>
+
+      <div class="confirm-message hidden">
+        Are you sure you want to reset he score?
+        <button class="yes-button">Yes</button>
+        <button class="no-button">No</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
